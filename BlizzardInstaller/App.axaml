@@ -14,4 +14,8 @@
     <Application.Resources>
         <SolidColorBrush Color="#0d0e12" x:Key="DefaultDark" />
     </Application.Resources>
+    <Window.Background>
+        <ImageBrush Source="Assets/Background.png"
+                    Stretch="UniformToFill" />
+    </Window.Background>
 </Application>
