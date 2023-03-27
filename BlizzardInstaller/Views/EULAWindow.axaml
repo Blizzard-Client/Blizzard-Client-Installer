@@ -14,9 +14,10 @@
         <vm:MainWindowViewModel />
     </Design.DataContext>
     
-    <ScrollViewer Background="{DynamicResource DefaultDark}" Width="350" Height="200">
-    <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Left">
-        <TextBlock.Text>
+<Grid>
+    <ScrollViewer Background="{DynamicResource DefaultDark}" Width="400" Height="200">
+        <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Left">
+            <TextBlock.Text>
 License Agreement for BlizzardClient
             
 This license agreement ("Agreement") is a legal agreement between you ("Licensee") 
@@ -41,6 +42,6 @@ By downloading, installing, or using BlizzardClient, Licensee agrees to be bound
         </TextBlock.Text>
     </TextBlock>
 </ScrollViewer>
+</Grid>
     
-
 </Window>
