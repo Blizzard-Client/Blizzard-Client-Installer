@@ -12,6 +12,6 @@
     </Application.Styles>
 
     <Application.Resources>
-        <SolidColorBrush Color="#191c19" x:Key="DefaultDark" />
+        <SolidColorBrush Color="#0d0e12" x:Key="DefaultDark" />
     </Application.Resources>
 </Application>
