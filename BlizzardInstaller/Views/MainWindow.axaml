@@ -11,29 +11,29 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <Design.DataContext>
-        <!--
-            This only sets the DataContext for the previewer in an IDE,
-            to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs)
-        -->
         <vm:MainWindowViewModel />
     </Design.DataContext>
-
-    <TextBlock Background="{DynamicResource DefaultDark}" TextWrapping="WrapWithOverflow">
-        <TextBlock.Text>
-            License Agreement for BlizzardClient
-            This license agreement ("Agreement") is a legal agreement between you ("Licensee") and the contributors to BlizzardClient ("Licensor"). By downloading, installing, or using BlizzardClient, Licensee agrees to be bound by the terms and conditions of this Agreement.
-            1. GRANT OF LICENSE
-            Subject to the terms and conditions of this Agreement, Licensor grants Licensee a non-exclusive, worldwide, royalty-free, perpetual, irrevocable license to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of BlizzardClient without restriction, including for commercial purposes.
-            2. LIMITATIONS
-            Licensee must include the following copyright notice in all copies or substantial portions of BlizzardClient: "Copyright (c) [year] [contributors to BlizzardClient]. All rights reserved." Licensee may not use the name, logo, or trademarks of Licensor without prior written permission. Licensor is not liable for any damages arising out of the use or inability to use BlizzardClient, even if Licensor has been advised of the possibility of such damages.
-            3. NO WARRANTY
-            BlizzardClient is provided "as is" without warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability and fitness for a particular purpose. Licensor does not warrant that BlizzardClient will meet Licensee's requirements or that the operation of BlizzardClient will be uninterrupted or error-free. Licensee assumes all responsibility for the selection and use of BlizzardClient.
-            4. TERMINATION
-            Licensor may terminate this Agreement at any time if Licensee breaches any of its terms or conditions. Upon termination, Licensee must immediately cease all use and distribution of BlizzardClient and destroy all copies of BlizzardClient in its possession.
-            5. ENTIRE AGREEMENT
-            This Agreement constitutes the entire agreement between Licensor and Licensee with respect to BlizzardClient and supersedes all prior or contemporaneous understandings or agreements, whether written or oral, regarding BlizzardClient.
-            By downloading, installing, or using BlizzardClient, Licensee agrees to be bound by the terms and conditions of this Agreement. If Licensee does not agree to the terms and conditions of this Agreement, Licensee must not download, install, or use BlizzardClient.
-        </TextBlock.Text>
-    </TextBlock>
+    <TextBlock Background="{DynamicResource DefaultDark}" TextWrapping="Wrap" Width="400" Height="200" TextAlignment="Left">
+    <TextBlock.Text>
+        License Agreement for BlizzardClient&#xA;
+        This license agreement ("Agreement") is a legal agreement between you ("Licensee") and the contributors to BlizzardClient ("Licensor"). By downloading, installing, or using BlizzardClient, Licensee agrees to be bound by the terms and conditions of this Agreement.&#xA;&#xA;
+        1. GRANT OF LICENSE&#xA;
+        Subject to the terms and conditions of this Agreement, Licensor grants Licensee a non-exclusive, worldwide, royalty-free, perpetual, irrevocable license to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of BlizzardClient without restriction, including for commercial purposes.&#xA;&#xA;
+        
+        2. LIMITATIONS&#xA;
+        Licensee must include the following copyright notice in all copies or substantial portions of BlizzardClient: "Copyright (c) [year] [contributors to BlizzardClient]. All rights reserved." Licensee may not use the name, logo, or trademarks of Licensor without prior written permission. Licensor is not liable for any damages arising out of the use or inability to use BlizzardClient, even if Licensor has been advised of the possibility of such damages.&#xA;&#xA;
+        
+        3. NO WARRANTY&#xA;
+        BlizzardClient is provided "as is" without warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability and fitness for a particular purpose. Licensor does not warrant that BlizzardClient will meet Licensee's requirements or that the operation of BlizzardClient will be uninterrupted or error-free. Licensee assumes all responsibility for the selection and use of BlizzardClient.&#xA;&#xA;
+        
+        4. TERMINATION&#xA;
+        Licensor may terminate this Agreement at any time if Licensee breaches any of its terms or conditions. Upon termination, Licensee must immediately cease all use and distribution of BlizzardClient and destroy all copies of BlizzardClient in its possession.&#xA;&#xA;
+        
+        5. ENTIRE AGREEMENT&#xA;
+        This Agreement constitutes the entire agreement between Licensor and Licensee with respect to BlizzardClient and supersedes all prior or contemporaneous understandings or agreements, whether written or oral, regarding BlizzardClient.&#xA;&#xA;
+        
+        By downloading, installing, or using BlizzardClient, Licensee agrees to be bound by the terms and conditions of this Agreement. If Licensee does not agree to the terms and conditions of this Agreement, Licensee must not download, install, or use BlizzardClient.
+    </TextBlock.Text>
+</TextBlock>
 
 </Window>
