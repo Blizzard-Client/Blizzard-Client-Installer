@@ -13,5 +13,7 @@
 
     <Application.Resources>
         <SolidColorBrush Color="#0d0e12" x:Key="DefaultDark" />
+        <SolidColorBrush Color="#007ACC" x:Key="ButtonColor" />
+        <SolidColorBrush Color="#005a96" x:Key="ButtonHoverColor"/>
     </Application.Resources>
 </Application>

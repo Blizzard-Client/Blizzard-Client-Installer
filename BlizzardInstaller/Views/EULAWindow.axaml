@@ -1,8 +1,8 @@
 <Window
-    Height="308"
+    Height="315"
     Icon="/Assets/avalonia-logo.ico"
-    Title="BlizzardInstaller"
-    Width="545"
+    Title="Blizzard Client Installer"
+    Width="560"
     x:Class="BlizzardInstaller.Views.MainWindow"
     xmlns="https://github.com/avaloniaui"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -15,8 +15,8 @@
     </Design.DataContext>
     
 <Grid>
-    <ScrollViewer Background="{DynamicResource DefaultDark}" Width="400" Height="200">
-        <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Left">
+    <ScrollViewer Background="{DynamicResource DefaultDark}" Width="400" Height="200" ZIndex="1" Opacity="0.5">
+        <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Left" Opacity="2">
             <TextBlock.Text>
 License Agreement for BlizzardClient
             
@@ -42,6 +42,13 @@ By downloading, installing, or using BlizzardClient, Licensee agrees to be bound
         </TextBlock.Text>
     </TextBlock>
 </ScrollViewer>
+    <Image Source="../Assets/Background.png" ZIndex="0" Stretch="Fill"></Image>
+    <Grid.Styles>
+        <Style Selector="Button:pointerover /template/ ContentPresenter">
+            <Setter Property="TextBlock.Background" Value="#005a96"/>
+        </Style>
+    </Grid.Styles>
+    <Button Background="{DynamicResource ButtonColor}" FontSize="20" Width="130" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Source Sans Pro" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="1, 1, 10, 6">Agree</Button>
 </Grid>
     
 </Window>
