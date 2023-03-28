@@ -1,5 +1,4 @@
-﻿<reactiveUi:ReactiveUserControl 
-    x:TypeArguments="vm:FirstViewModel" 
+﻿<Window
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -7,12 +6,13 @@
     xmlns:reactiveUi="http://reactiveui.net"
     xmlns:vm="clr-namespace:BlizzardInstaller.ViewModels"
     Width="545" Height="315"
-    x:Class="BlizzardInstaller.Views.Introduction">
+    x:DataType="vm:MainWindowViewModel"
+    Background="#1f1f2e"
+    x:Class="BlizzardInstaller.Views.MainWindow">
     
     <Grid>
         <Image Source="../Assets/Anvil.png" ZIndex="1"  Height="40" HorizontalAlignment="Center" Margin="0, 0, 300, 200"/>
         <Image Source="../Assets/BLIZZARD.png" ZIndex="1" Height="40" Margin="50, 0, 0, 200"/>
-        <Image Source="../Assets/Background.png" Stretch="Fill" ZIndex="0"/>
         <TextBlock TextWrapping="Wrap" LineHeight="20" FontWeight="Medium" Margin="100,150,0,0">
             This installer will guide you through the process of 
         installing Blizzard Client on your system
@@ -22,6 +22,6 @@
                 <Setter Property="TextBlock.Background" Value="#005a96"/>
             </Style>
         </Grid.Styles>
-        <Button Background="{DynamicResource ButtonColor}" FontSize="20" Width="130" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Source Sans Pro" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="1, 1, 10, 6">CONTINUE</Button>
+        <Button Background="{DynamicResource ButtonColor}" Command="{Binding NavigateNextCommand}" FontSize="20" Width="130" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Source Sans Pro" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="1, 1, 10, 10">CONTINUE</Button>
     </Grid>
-</reactiveUi:ReactiveUserControl>
+</Window>

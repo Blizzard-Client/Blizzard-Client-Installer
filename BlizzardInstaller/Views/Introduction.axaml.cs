@@ -7,14 +7,10 @@ using ReactiveUI;
 
 namespace BlizzardInstaller.Views;
 
-public partial class Introduction : ReactiveUserControl<FirstViewModel>
+public partial class Introduction : Window
 {
     public Introduction()
     {
         InitializeComponent();
-        this.WhenActivated(disposables =>
-        {
-            this.OneWayBind(ViewModel, x => x.UrlPathSegment, x => x.But)
-        });
     }
 }

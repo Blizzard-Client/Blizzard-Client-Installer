@@ -3,11 +3,12 @@
     Icon="/Assets/App.ico"
     Title="Blizzard Client Installer"
     Width="560"
-    x:Class="BlizzardInstaller.Views.MainWindow"
+    x:Class="BlizzardInstaller.Views.Introduction"
     xmlns="https://github.com/avaloniaui"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="using:BlizzardInstaller.ViewModels"
+    Background="#1f1f2e"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <Design.DataContext>
@@ -15,8 +16,10 @@
     </Design.DataContext>
     
 <Grid>
-    <ScrollViewer Background="{DynamicResource DefaultDark}" Width="400" Height="200" ZIndex="1" Opacity="0.5">
-        <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Left" Opacity="2">
+    <Image Source="../Assets/Anvil.png" ZIndex="1"  Height="30" HorizontalAlignment="Center" Margin="0, 0, 220, 250"/>
+    <Image Source="../Assets/BLIZZARD.png" ZIndex="1" Height="30" Margin="50, 0, 0, 250"/>
+    <ScrollViewer Width="500" Height="180" ZIndex="1">
+        <TextBlock Background="#2d2d42" TextWrapping="WrapWithOverflow" TextAlignment="Left" Opacity="2">
             <TextBlock.Text>
 License Agreement for BlizzardClient
             
@@ -42,13 +45,12 @@ By downloading, installing, or using BlizzardClient, Licensee agrees to be bound
         </TextBlock.Text>
     </TextBlock>
 </ScrollViewer>
-    <Image Source="../Assets/Background.png" ZIndex="0" Stretch="Fill"></Image>
     <Grid.Styles>
         <Style Selector="Button:pointerover /template/ ContentPresenter">
             <Setter Property="TextBlock.Background" Value="#005a96"/>
         </Style>
     </Grid.Styles>
-    <Button Background="{DynamicResource ButtonColor}" FontSize="20" Width="130" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Source Sans Pro" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="1, 1, 10, 6">Agree</Button>
+    <Button Background="{DynamicResource ButtonColor}" FontSize="20" Width="130" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Source Sans Pro" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="1, 1, 10, 10">Agree</Button>
 </Grid>
     
 </Window>
