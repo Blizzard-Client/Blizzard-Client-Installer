@@ -4,11 +4,14 @@ using Avalonia.Markup.Xaml;
 
 namespace BlizzardInstaller.Views;
 
-public partial class SplashScreen : UserControl
+public partial class Introduction : Window
 {
-    public SplashScreen()
+    public Introduction()
     {
         InitializeComponent();
+#if DEBUG
+        this.AttachDevTools();
+#endif
     }
 
     private void InitializeComponent()

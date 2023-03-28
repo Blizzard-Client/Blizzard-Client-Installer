@@ -1,6 +1,6 @@
 <Window
     Height="315"
-    Icon="/Assets/avalonia-logo.ico"
+    Icon="/Assets/App.ico"
     Title="Blizzard Client Installer"
     Width="560"
     x:Class="BlizzardInstaller.Views.MainWindow"
